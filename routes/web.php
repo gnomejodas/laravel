@@ -15,12 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-
-    // try {
-    //     DB::connection()->getPdo();
-    //     echo 'Yey, it worked';
-    // } catch (\Exception $e) {
-    //     die("Could not connect to the database.  Please check your configuration. error:" . $e );
-    // }
-
 });
+
+
+Route::get('test1', 'TestController@test1');
